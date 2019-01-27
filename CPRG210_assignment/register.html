@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+        <head>
+                <meta charset="utf-8">
+                <title>Travel Experts</title>
+                <link href="https://fonts.googleapis.com/css?family=Staatliches" rel="stylesheet">
+                <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+                <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize/modern-normalize.css">
+                <link rel="stylesheet" href="style.css">
+                <script src="script.js">
+                    </script>
+        
+            </head>
+
+
+
+
+<body>
+        <!--website icon which at click will send to home page index.html-->    
+        <a href="index.html"><img class="homeicon" src="img/backpackicon.png" alt="backpack"></a>
+        
+        
+        
+        
+        
+        <div class = "container">
+
+            <form action="" name = "myForm">
+                <h2>In order to provide the best deals for you please enter the following details: </h2>
+
+                    <!--message tha will appear at click on input space in register page form-->
+                    <dialog class="tip" id="fullname">Your full name, first name and then you last name.</dialog>                    
+                    <dialog class="tip" id="fulladdress">Your home address.<br>000 Name street SW.</dialog>
+                    <dialog class="tip" id="tipprovince">Choose your current Province</dialog>
+                    <dialog class="tip" id="tippostalcode">Your postal code including space.<br>should look like this Z8X 3Y9</dialog>
+                    <dialog class="tip" id="tipemail">Your email will let us let you know the best deals for you.</dialog>
+                    
+                <!--details about input information and how it behave, onfocus will display beside input form message created above-->
+               <div>
+                <label for="customername">Your name:</label> 
+                <input class="box" type="text" name="customername"                
+                    onfocus="fullname.open=Boolean(1)"
+                    onblur="fullname.open=Boolean(0)"
+                    required>
+                    
+               </div> 
+               
+               
+               <div>
+                <label for="customermail">Your email:</label> 
+                <input class="box" type="text" name="customermail" 
+                    onfocus="tipemail.open=Boolean(1)"
+                    onblur="tipemail.open=Boolean(0)"
+                    required>
+                
+               </div>
+
+                <div>
+                <label for="customeraddress">Address:</label> 
+                <input class="box" type="text" name="customeraddress" 
+                onfocus="fulladdress.open=Boolean(1)"
+                    onblur="fulladdress.open=Boolean(0)"
+                    required>
+                
+                </div>
+
+                <div>
+                <label for="customercity">City:</label> 
+                <input class="box" type="text" name="customercity" onfocus="inputOnfocus(this)"
+                required>
+                
+                </div>  
+
+                <div>
+                <label for="customerprovince">Province:</label> 
+                <select class="box" type="text" name="customerprovince" 
+                    onfocus="tipprovince.open=Boolean(1)"
+                    onblur="tipprovince.open=Boolean(0)">
+                        <option value="alberta">Alberta</option>
+                        <option value="britishcolumbia">British Columbia</option>
+                        <option value="saskatchewan">Saskatchewan</option>
+                      </select><br>
+                </div>
+                
+                <div>      
+                <label for="customerpostcode">Postal code:</label> 
+                <input class="box" type="text" name="customerpostcode" 
+                    onfocus="tippostalcode.open=Boolean(1)"
+                    onblur="tippostalcode.open=Boolean(0)"
+                    required>
+                
+                </div>  
+
+                <input type = "submit" class="submitBtn" value = "submit" name="submit">
+
+         </form>
+        </div>
+        <!--checkbox option for choosing among options offered-->
+        <div>
+            <form>
+                    <h2 class="destinationshead">Where would you like to go?</h2>    
+                    
+                    <strong>Destinations : </strong> 
+                    <input type="checkbox" name="providence" value="providence"> Providence
+                    <input type="checkbox" name="botswana" value="botswana"> Botswana
+                    <input type="checkbox" name="mongolia" value="mongolia"> Mongolia
+                    <input type="checkbox" name="mavecure" value="mavecure"> Mavecure
+                
+
+                <p><input type="submit"></p>  
+            </form>
+        </div>
+
+        
+ 
+
+ 
+
+        <footer> 
+            <div>Developed by &copy;  Guido Amaya 2019.</div>
+            
+        </footer>
+        
+
+
+            
+
+</body>
+
+
+
+
+</html>

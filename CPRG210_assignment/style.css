@@ -1,0 +1,121 @@
+/* apply a natural box layout model to all elements, but allowing comoponents change */
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+body {
+    background-color: rgba(189, 170, 3, 0.781); 
+    background-image: linear-gradient(to right,#BFA435, #ECC112);
+    color: rgb(64, 64, 66);
+    font: 16px Arial, Helvetica, sans-serif; 
+    margin: 5%;
+    }
+
+.container {
+    width: 300px;
+    clear: both;
+  }
+
+  .container input {
+    width: 100%;
+    clear: both;
+  }  
+
+.box{
+    border-width: 2px;
+    border-style:groove;
+    border-color:rgb(4, 100, 9);
+    border-radius: 10px;
+}
+.img {
+    width: 310px;
+    height: 200px;
+    border-width: 4px;
+    border-style:double;
+    border-color:rgb(21, 87, 24);
+    border-radius: 10px;
+}
+
+.icon {
+    float: top;
+    border-width: 2px;
+    border-style:groove;
+    border-color:rgba(21, 87, 24, 0.014);
+    border-radius: 10px;
+}
+
+.homeicon{
+    border-width: 4px;
+    border-style:double;
+    border-color:rgb(21, 87, 24);
+    border-radius: 10px;
+}
+/* sidebar is the unordered list created on index.html */
+.sidebar {
+    float: right;
+    width: 200px;
+    height: 220px;
+    border-width: 4px;
+    border-style:solid;
+    border-color:rgb(21, 87, 24);
+    border-radius: 10px;
+}
+/* table which contains pictures and descriptions about destinations created on script.js */
+table {
+    float: left;
+    width: 500px;
+    text-align: center;
+    border-width: 4px;
+    border-style:solid;
+    border-color:rgb(21, 87, 24);
+    border-radius: 10px;
+
+}
+
+.photos {
+    float: right;
+    width: 310px;
+    height: 1000px;
+    border-width: 4px;
+    border-style:solid;
+    border-color:rgb(21, 87, 24);
+    border-radius: 10px;
+}
+
+.infoicons {
+        
+        float: bottom;
+        height: 40px;
+        margin-top: -40px;
+        float:right;
+
+
+}
+
+.index {
+    float: center;
+    width: 310px;
+    height: 1000px;
+    border-width: 4px;
+    border-style:solid;
+    border-color:rgb(21, 87, 24);
+    border-radius: 10px;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+    
+    
